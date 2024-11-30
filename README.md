@@ -1,28 +1,19 @@
 # News-Aggregator-Web-App
-Personalized News Aggregator Web App
-Project Overview
-The Personalized News Aggregator is a Maven-based web application that gathers news from various sources and delivers a customized feed for each user based on their preferences. It aims to streamline information delivery by filtering news topics that align with users' interests.
+Android Developer Nanodegree Capstone Project.
+A bit overview, it uses newsapi.org API to get news and get JSON data back. Then it is parsed using google's gson library and the requests are sent by Retrofit.
 
-Features
+Note: To run the app you have to add NewsAPI.org key. I have taken this step to due to limited access to daily request for News. Getting a key would take just few seconds :)
+Run the app
 
-User Preferences: Set interests and keywords to receive news tailored to specific topics.
-
-Real-Time Updates: Fetches the latest news using Axios and displays it promptly.
-
-Category Filtering: Offers multiple news categories like Technology, Health, Sports, and more.
-
-Bookmarking: Allows users to save articles for future reference.
-
-Responsive Design: Optimized for both desktop and mobile views.
-
-Tech Stack
-
-Frontend: HTML, CSS, JavaScript, Bootstrap
-
-Backend: Java (Spring Boot)
-
-Data Fetching: Axios for HTTP requests
-
-Database: MySQL (or preferred database system)
-
-Build Tool: Maven
+Clone the app with .git url
+Open /home/.gradle/gradle.properties and add the following line (Create the file if not exists)
+NewsApi_ApiKey=<YOUR API KEY>
+Run the app by Shift + F10 or clicking Run
+Setup API Key
+Visit NewsAPI.org to get your API Key
+Copy your API Key from accounts section
+Open gradle.properties (Create the file if not exists)
+For Linux/Mac: /home/.gradle/gradle.properties
+For Windows: C:\Users\<UserName>\.gradle\gradle.properties
+Add the following line:
+NewsApi_ApiKey="YOUR_API_KEY"
